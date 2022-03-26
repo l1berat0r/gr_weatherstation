@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<block>
+  <name>WS Encoder</name>
+  <key>weatherstation_encode_ws</key>
+  <category>[weatherstation]</category>
+  <import>import weatherstation</import>
+  <make>weatherstation.encode_ws($sample_rate, $pulse_length_ms, $debug)</make>
+  <param>
+    <name>Sample Rate</name>
+    <key>sample_rate</key>
+    <value>2500000</value>
+    <type>int</type>    
+  </param>
+  <param>
+    <name>Pulse length [ms]</name>
+    <key>pulse_length_ms</key>
+    <value>0.5</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Debug</name>
+    <key>debug</key>
+    <value>False</value>
+    <type>bool</type>    
+    <option>
+			<name>Enable</name>
+			<key>True</key>
+		</option>
+		<option>
+			<name>Disable</name>
+			<key>False</key>
+		</option>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
