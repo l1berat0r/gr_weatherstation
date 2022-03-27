@@ -170,8 +170,7 @@ namespace gr {
       if(pmt::is_pair(msg) && !transmiting) {
         uint8_t *data = (uint8_t*) pmt::blob_data(pmt::cdr(msg));
         start_transmit(data);
-        dout << "DATAZ: " << data[0] << data[1] << data[2] << data[3] << std::endl;
-        dout << "RAZCWIETALI JABŁONI I GRUSZY" << std::endl;
+        dout << "DATA: " << data[0] << data[1] << data[2] << data[3] << std::endl;
       }
     }
 
