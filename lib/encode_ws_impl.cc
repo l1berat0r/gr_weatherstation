@@ -52,7 +52,6 @@ namespace gr {
       data_to_transmit = (uint8_t*) malloc(4);
       dout << "PULZ: " << pulse_length << std::endl;
       
-      dout << "LET's ROCK" << std::endl;
       message_port_register_in(pmt::mp("in"));
 	    set_msg_handler(pmt::mp("in"), boost::bind(&encode_ws_impl::message_in, this, _1));
 
