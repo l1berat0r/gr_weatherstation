@@ -6,11 +6,13 @@ gnuradio oot module made to spoof a weatherstation I bought in Lidl for $20 :)
 
 For gnuradio 3.8:
 
-mkdir build </br>
-cd build </br>
-cmake .. </br>
-sudo make install </br>
+```
+mkdir build 
+cd build
+cmake ..
+sudo make install
 sudo ldconfig
+```
 
 ## Examples
 
